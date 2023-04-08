@@ -186,6 +186,7 @@ body {
 
   .card .card_content {
     margin: 0 1rem;
+    margin-bottom: 1rem;
   }
 
   .card .card_content .card_image {
@@ -204,6 +205,7 @@ body {
     display: flex;
     gap: 0.5rem;
     letter-spacing: 0;
+    font-size: 1.8rem;
   }
 
   .card .card_content .card_details {
@@ -214,6 +216,7 @@ body {
 
   .result_card .result_card_content {
     margin: 0 1rem;
+    margin-bottom: 1rem;
   }
 
   .result_card_details div:last-child {
