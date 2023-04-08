@@ -200,6 +200,12 @@ body {
     gap: 0.5rem;
   }
 
+  .card .card_content .card_image div span h1 {
+    display: flex;
+    gap: 0.5rem;
+    letter-spacing: 0;
+  }
+
   .card .card_content .card_details {
     flex-direction: row;
     padding: 2rem 2rem 2rem 2rem;
