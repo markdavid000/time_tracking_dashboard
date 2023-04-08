@@ -180,7 +180,8 @@ body {
 
 @media (max-width: 683.64px) {
   .content {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    display: block;
   }
 
   .card .card_content {
