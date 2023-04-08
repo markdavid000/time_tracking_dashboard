@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  grid-row: 1 / 4;
+}
+
+.card .card_content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+}
+
+.card .card_content .card_image {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+  padding: 2rem 0 4.5rem 2rem;
+}
+
+.card .card_content .card_image .img {
+  border: 3px solid #eeefff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+
+.card .card_content .card_image p {
+  color: #bdc1ff;
+  margin-bottom: 0.1rem;
+}
+
+.card .card_content .card_image h1 {
+  color: #e2e4ff;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.2rem;
+}
+
+.card .card_content .card_image h1:last-child {
+  margin-bottom: 0;
+}
+
+.card .card_content .card_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0 2rem 2rem;
+}
+
+.card .card_content .card_details a {
+  color: #e6e7ff;
+  text-decoration: none;
+}
+
+.card .card_content .card_details a:last-child {
+  color: hsl(235, 45%, 61%);
+}
+
+.result_card .result_card_content {
+  border-radius: 21px;
+  z-index: -1000;
+}
+
+.result_card .result_card_content.one {
+  background: hsl(15, 100%, 70%);
+}
+
+.result_card .result_card_content.two {
+  background: hsl(195, 74%, 62%);
+}
+
+.result_card .result_card_content.three {
+  background: hsl(348, 100%, 68%);
+}
+
+.result_card .result_card_content.four {
+  background: hsl(145, 58%, 55%);
+}
+
+.result_card .result_card_content.five {
+  background: hsl(264, 64%, 52%);
+}
+
+.result_card .result_card_content.six {
+  background: hsl(43, 84%, 65%);
+}
+
+.result_card .result_card_content .result_card_image {
+  text-align: right;
+  z-index: -1000;
+  padding: 0 1rem 0 0;
+}
+
+.result_card .result_card_content .result_card_details {
+  background-color: hsl(236, 45%, 26%);
+  border-radius: 20px;
+  padding: 2rem 1rem 2rem 1rem;
+  margin-top: -2rem;
+  z-index: 1000;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.result_card .result_card_content .result_card_details:hover {
+  background-color: hsl(236, 46%, 33%);
+  border-radius: 20px;
+  padding: 2rem 1rem 2rem 1rem;
+  margin-top: -2rem;
+  z-index: 1000;
+}
+
+.result_card_details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.result_card_details div p {
+  color: #e2e4ff;
+}
+
+.result_card_details div img {
+  cursor: pointer;
+}
+
+.result_card_details div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.result_card_details div:last-child p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.result_card_details div:last-child p:last-child {
+  font-size: 0.8rem;
+  color: #bdc1ff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #bdc1ff;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: inline-flex;
+}
+
+@media (max-width: 683.64px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .card .card_content {
+    margin: 0 1rem;
+  }
+
+  .card .card_content .card_image {
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .card .card_content .card_image div span {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .card .card_content .card_details {
+    flex-direction: row;
+    padding: 2rem 2rem 2rem 2rem;
+    justify-content: space-between;
+  }
+
+  .result_card .result_card_content {
+    margin: 0 1rem;
+  }
+
+  .result_card_details div:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .attribution {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+  }
+}
